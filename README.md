@@ -41,7 +41,7 @@ Asynchronous operations that return a single or no value are represented by susp
 suspend fun signInWithCustomToken(token: String): AuthResult
 ```
 
-It is important to remember that unlike a callback based API, wating for suspending functions to complete is implicit and so if you don't want to wait for the result you can `launch` a new coroutine:
+It is important to remember that unlike a callback based API, waiting for suspending functions to complete is implicit and so if you don't want to wait for the result you can `launch` a new coroutine:
 
 ```kotlin
 //TODO don't use GlobalScope
